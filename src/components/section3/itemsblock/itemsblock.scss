@@ -1,5 +1,5 @@
 .itemsblock {
-    height: 365px; 
+    // height: 365px; 
     display: flex;  
     color: var(--dark, #161616);
     align-items: center;
@@ -19,7 +19,7 @@
 
         @media (max-width: 420px) {
             font-size: 152px;
-            padding-top: 150px;
+            // padding-top: 150px;
         }
     }
 
