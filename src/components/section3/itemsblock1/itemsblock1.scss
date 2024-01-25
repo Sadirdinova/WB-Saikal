@@ -1,0 +1,22 @@
+.itemsblock1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 718px;
+    height: 120px;
+    border-bottom: 1px solid var(--dark, #161616);
+
+    @media (max-width:1024px) {
+        width: 565px;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 14px;
+        width: 257px;
+        height: 72px;
+    }
+}
+
+.itemsblock1:hover {
+    color: #7D2071;
+}

@@ -1,0 +1,25 @@
+.buttonblock button {
+    padding: 10px 50px;
+    width: 333px;
+    background-color: #8F2381;
+    color: #fff;
+    font-size: 33px;
+    font-weight: 400;
+    text-align: start;
+    border: none;
+    cursor: pointer;
+
+    @media (max-width: 1024px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 18px;
+        padding: 10px 20px;
+        width: 181px;
+    }
+}
+
+.buttonblock button:hover {
+    background: #BC3996;
+}
