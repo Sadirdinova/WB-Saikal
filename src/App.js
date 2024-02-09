@@ -1,4 +1,3 @@
-import { Route, Routes } from "react-router-dom";
 import { Footer } from "./components/footer/footer";
 import { Header } from "./components/header/header";
 import { Section1 } from "./components/section1/section1";

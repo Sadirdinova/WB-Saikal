@@ -1,82 +1,55 @@
 .section5 {
-    padding: 47px 100px 0 100px;
     margin: 100px 0 100px 0;
     color: var(--dark, #161616);
 
-    @media (max-width:1024px) {
-        padding: 25px 30px;
-    }
-
-    @media (max-width: 420px) {
-        padding: 14px 20px;
+    @media (max-width: 800px) {
         margin: 40px 0 40px 0;
     }
 
     h1 {
-        width: 614px;
-        font-size: 32px;
+        font-size: clamp(16px, 1.3vw, 32px);
         font-weight: 700;
         line-height: 38.69px;
         text-transform: uppercase;
         padding-bottom: 25px;
 
-        @media (max-width: 1024px) {
-            width: 485px;
-            font-size: 22px;
-            line-height: 26.6px;
-        }
-
-        @media (max-width: 420px) {
-            width: 350px;
-            font-size: 16px;
-            line-height: 19.34px;
-            padding-bottom: 8px;
+        @media (max-width: 800px) {
+            >br {
+                display: none;
+            }
         }
     }
 
     p {
-        font-size: 20px;
+        font-size: clamp(14px, 1vw, 20px);
         font-weight: 400;
         line-height: 24.26px;
         padding-bottom: 20px;
-
-        @media (max-width: 1024px) {
-            font-size: 18px;
-            line-height: 21.83px;
-        }
-
-        @media (max-width: 420px) {
-            font-size: 14px;
-            line-height: 16.98px;
-        }
     }
 
     h2 {
         text-align: right;
-        font-size: 22px;
+        font-size: clamp(12px, 1vw, 22px);
         font-weight: 600;
         line-height: 26.95px;
-        width: 591px;
 
-        @media (max-width: 1024px) {
-            width: 505px;
-            font-size: 18px;
-            line-height: 22.05px;
+        @media (max-width: 800px) {
+            >br {
+                display: none;
+            }
         }
 
-        @media (max-width: 420px) {
+        @media (max-width: 800px) {
             text-align: start;
-            font-size: 12px;
-            line-height: 14.7px;
             padding-bottom: 20px;
-            width: 350px;
         }
     }
 
     .section5-items {
         display: flex;
-        
-        @media (max-width: 420px) {
+        justify-content: space-between;
+
+        @media (max-width: 800px) {
             display: block;
         }
     }
@@ -84,21 +57,17 @@
     .section5-item {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        align-items: center;
 
-        @media (max-width: 420px) {
+        @media (max-width: 800px) {
             display: block;
         }
 
         img {
-            margin-top: -40px;
+            width: 100%;
+            margin-top: -80px;
 
-            @media (max-width: 1024px) {
-                    width: 542.1px;
-            }
-
-            @media (max-width: 420px) {
-                width: 355px;
-                height: 222px;
+            @media (max-width: 800px) {
                 margin-top: 20px;
             }
         }
